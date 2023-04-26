@@ -1,0 +1,37 @@
+$color_1: rgb(40, 99, 143);
+$color_2: rgb(252, 245, 235);
+$background-color_1: rgb(252, 245, 235);
+$background-color_2: rgb(40, 99, 143);
+$background-color_3: rgb(11, 38, 58);
+
+/*On hover the button colors go into their respective negatives.  Active is a darker color than hover.  These colors can be changes to customize the buttons uses */
+button {
+	display: flex;
+	background-color: $background-color_1;
+	margin: 50px;
+	width: 150px;
+	height: 35px;
+	border: .5px solid rgb(81, 49, 39);
+	border-radius: 25px;
+	font-size: 16px;
+	justify-content: center;
+	align-content: center;
+	a {
+		text-decoration: none;
+		color: $color_1;
+		align-self: center;
+		&:hover {
+			color: $color_2;
+			font-size: 18px;
+			border-radius: 25px;
+		}
+	}
+	&:hover {
+		color: $color_2;
+		background-color: $background-color_2;
+	}
+	&:active {
+		background-color: $background-color_3;
+		color: $color_2;
+	}
+}
