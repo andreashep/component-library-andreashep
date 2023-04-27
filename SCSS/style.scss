@@ -1,8 +1,8 @@
 @import 'reset';
 @import 'variables';
-@import 'components/button';
-@import 'components/card';
-@import 'components/footer';
-@import 'components/header';
-@import 'components/nav';
-@import 'components/hero';
+@import '/SCSS/sassy/hero';
+@import '/SCSS/sassy/button';
+@import '/SCSS/sassy/card';
+@import '/SCSS/sassy/nav';
+@import '/SCSS/sassy/footer';
+@import '/SCSS/sassy/header';
