@@ -3,6 +3,17 @@
     "main"
   ],
   "files.exclude": {
-    ".vscode": true
+    "*.git": true,
+    "*.git.*": true,
+    "*.vscode": true,
+    "*.vscode.*": true,
+    "*node_modules.*": true,
+    "*package-lock": true,
+    "public/reset.css": true,
+    "public/reset.css.map": true,
+    "public/style.css": true,
+    "public/style.css.map": true,
+    "package-lock.json": true,
+    "node_modules": true
   }
 }
