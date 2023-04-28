@@ -1,5 +1,8 @@
 {
-    "githubPullRequests.ignoredPullRequestBranches": [
-        "main"
-    ]
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "main"
+  ],
+  "files.exclude": {
+    ".vscode": true
+  }
 }
