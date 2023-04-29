@@ -157,10 +157,26 @@ button:hover {
 }
 
 /*On hover the button colors go into their respective negatives.  Active is a darker color than hover.  These colors can be changes to customize the buttons uses */
-button {
+.btn_sizes {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
   display: flex;
   background-color: rgb(252, 245, 235);
-  margin: 50px;
+  margin: 100px;
   width: 150px;
   height: 35px;
   border: 0.5px solid rgb(81, 49, 39);
@@ -169,23 +185,146 @@ button {
   justify-content: center;
   align-content: center;
 }
-button a {
+.btn a {
   text-decoration: none;
-  color: rgb(40, 99, 143);
   align-self: center;
 }
-button a:hover {
+.btn:hover {
   color: rgb(252, 245, 235);
-  font-size: 18px;
+  background-color: rgb(40, 99, 143);
+  filter: drop-shadow(0 0 0.5rem black);
+}
+.btn:active {
+  background-color: rgb(11, 38, 58);
+  color: rgb(252, 245, 235);
+}
+
+.btn-small {
+  display: flex;
+  background-color: rgb(252, 245, 235);
+  margin: 50px;
+  width: 100px;
+  height: 35px;
+  border: 0.5px solid rgb(81, 49, 39);
+  border-radius: 25px;
+  font-size: 12px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.btn-small a {
+  text-decoration: none;
+  align-self: center;
+}
+.btn-small a:hover {
+  width: 200px;
   border-radius: 25px;
 }
-button:hover {
+.btn-small:hover {
   color: rgb(252, 245, 235);
   background-color: rgb(40, 99, 143);
 }
-button:active {
+.btn-small:active {
   background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
+}
+
+.btn-large {
+  display: flex;
+  background-color: rgb(252, 245, 235);
+  margin: 100px;
+  width: 200px;
+  height: 50px;
+  border: 0.5px solid rgb(81, 49, 39);
+  border-radius: 25px;
+  font-size: 16px;
+  justify-content: center;
+  align-content: center;
+}
+.btn-large a {
+  text-decoration: none;
+  align-self: center;
+}
+.btn-large:hover {
+  color: rgb(252, 245, 235);
+  background-color: rgb(40, 99, 143);
+  filter: drop-shadow(0 0 0.5rem black);
+}
+.btn-large:active {
+  background-color: rgb(11, 38, 58);
+  color: rgb(252, 245, 235);
+}
+
+.btn-icon {
+  display: flex;
+  background-color: rgb(252, 245, 235);
+  margin: 100px;
+  width: 75px;
+  height: 75px;
+  border: 0.5px solid rgb(81, 49, 39);
+  border-radius: 50%;
+  font-size: 16px;
+  justify-content: center;
+  align-content: center;
+}
+.btn-icon a {
+  text-decoration: none;
+  align-self: center;
+}
+.btn-icon:hover {
+  color: rgb(252, 245, 235);
+  background-color: rgb(40, 99, 143);
+  filter: drop-shadow(0 0 0.5rem black);
+}
+.btn-icon:active {
+  background-color: rgb(11, 38, 58);
+  color: rgb(252, 245, 235);
+}
+
+.btn-gradient {
+  display: flex;
+  background-color: rgb(252, 245, 235);
+  margin: 100px;
+  width: 150px;
+  height: 35px;
+  border: 0.5px solid rgb(81, 49, 39);
+  border-radius: 25px;
+  font-size: 16px;
+  justify-content: center;
+  align-content: center;
+}
+.btn-gradient a {
+  text-decoration: none;
+  align-self: center;
+}
+.btn-gradient:hover {
+  color: rgb(252, 245, 235);
+  background-color: rgb(40, 99, 143);
+  filter: drop-shadow(0 0 0.5rem black);
+}
+.btn-gradient:active {
+  background-color: rgb(11, 38, 58);
+  color: rgb(252, 245, 235);
+}
+
+.btn-square {
+  display: flex;
+  padding: 10px 20px;
+  border: 0.5px solid rgb(81, 49, 39);
+  border-radius: 4px;
+  background-color: rgb(252, 245, 235);
+  margin: 100px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-square a {
+  text-decoration: none;
+  align-self: center;
+  list-style: none;
+}
+.btn-square:hover {
+  background-color: rgb(40, 99, 143);
 }
 
 /* On mouse-over, add a deeper shadow */
