@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif&family=Source+Sans+Pro:wght@300&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,6 +47,21 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
 }
 
 /* The hero image */
@@ -176,6 +192,7 @@ ul {
 .btn {
   display: flex;
   background-color: rgb(252, 245, 235);
+  color: rgb(11, 38, 58);
   margin: 100px;
   width: 150px;
   height: 35px;
@@ -330,14 +347,7 @@ ul {
 /* On mouse-over, add a deeper shadow */
 /* Add some padding inside the card container */
 /* Add rounded corners to the top left and the top right corner of the image */
-body {
-  background-color: #fff;
-  color: #333;
-  font: 1em/1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
+/*div for cards 1&2*/
 .examples {
   display: flex;
   flex-direction: row;
@@ -347,41 +357,56 @@ body {
   border: 1px solid black;
   padding: 25px;
   height: 300px;
-  width: auto;
+  width: 100vw;
 }
 
+/*card 1*/
 .card1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4px;
+  padding: 3px;
   border: 1px solid black;
   width: 200px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 250px;
+  padding: 7px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 .card1 img {
   height: 150px;
   width: 150px;
+  margin: 20px;
 }
 .card1:hover {
   box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+.card1 h3 {
+  margin: 7px;
+  font-size: 1.5rem;
+}
+.card1 p {
+  margin: 7px;
+  font-size: 1rem;
+}
 
+/*text container*/
 .container1 {
   padding: 2px 16px;
 }
 
+/*card 2*/
 .card2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4px;
+  padding: 3px;
   border: 1px solid black;
-  width: 200px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 300px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
 }
@@ -389,21 +414,30 @@ body {
   box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .card2 img {
-  height: 200px;
+  height: 150px;
   width: 150px;
+  margin: 20px;
   border-radius: 5px 5px 0 0;
 }
+.card2 h3 {
+  font-size: 1.5rem;
+  margin: 7px;
+}
+.card2 p {
+  font-size: 1rem;
+  margin: 7px;
+}
 
+/*div for .card*/
 .detailed_cards {
   display: flex;
   flex-direction: row;
   grid-template-columns: auto-fill, minmax(230px, 1fr);
   grid-gap: 20px;
-}
-.detailed_cards h3 {
-  margin-bottom: 10px;
+  width: 100vw;
 }
 
+/*card*/
 .card {
   display: grid;
   grid-template-rows: max-content 200px 1fr;
@@ -415,25 +449,32 @@ body {
   height: 100%;
 }
 .card h2 {
-  margin: 0;
+  font-size: 2rem;
+  margin: 7px;
+  padding: 0.5rem;
+}
+.card p {
+  font-size: 1rem;
+  margin: 7px;
   padding: 0.5rem;
 }
 .card .content {
   padding: 0.5rem;
 }
 .card footer {
-  background-color: #333;
-  color: #fff;
+  background-color: rgb(252, 245, 235);
+  color: rgb(252, 245, 235);
   padding: 0.5rem;
 }
 
+/*div for .card*/
 .hd_cards_div {
   display: flex;
   flex-flow: row wrap;
   min-height: 525px;
   min-width: 100vw;
-  background-color: rgb(40, 99, 143);
-  border: 3px double rgb(81, 49, 39);
+  background-color: rgb(255, 255, 255);
+  border: 3px double rgb(81, 39, 39);
   justify-content: space-around;
   align-content: space-between;
   column-gap: 30px;
@@ -448,43 +489,14 @@ body {
   color: rgb(252, 245, 235);
 }
 
-.pod {
-  background-color: rgb(252, 245, 235);
-  display: flex;
-  flex-flow: row wrap;
-  height: 525px;
-  width: 100vw;
-  border: 3px double rgb(81, 49, 39);
-  justify-content: space-around;
-  align-content: space-between;
-  column-gap: 30px;
-  padding: 10px 30px 30px 30px;
-}
-.pod h1 {
-  display: flex;
-  width: 100%;
-  margin-top: 5px;
-  justify-content: center;
-  align-content: center;
-  color: rgb(40, 99, 143);
-}
-.pod h3 {
-  display: flex;
-  width: 100%;
-  margin-top: 5px;
-  justify-content: center;
-  align-content: center;
-  color: rgb(40, 99, 143);
-  font: 1.2em/1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
+/*card.1*/
 .one {
   display: flex;
   flex-basis: 20%;
-  height: 425px;
+  height: 325px;
   flex-flow: row wrap;
-  background-color: #fff;
-  border: 2px solid rgb(81, 49, 39);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 39, 39);
   text-align: center;
   justify-content: center;
   align-content: space-around;
@@ -497,13 +509,14 @@ body {
   filter: drop-shadow(3px 3px 3px black);
 }
 
+/*card.2*/
 .two {
   display: flex;
   flex-basis: 25%;
-  height: 425px;
+  height: 325px;
   flex-flow: row wrap;
-  background-color: #fff;
-  border: 2px solid rgb(81, 49, 39);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 39, 39);
   text-align: center;
   justify-content: center;
   align-content: space-around;
@@ -516,13 +529,14 @@ body {
   filter: drop-shadow(3px 3px 3px black);
 }
 
+/*card.3*/
 .three {
   display: flex;
   flex-basis: 20%;
-  height: 425px;
+  height: 325px;
   flex-flow: row wrap;
-  background-color: #fff;
-  border: 2px solid rgb(81, 49, 39);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 39, 39);
   text-align: center;
   justify-content: center;
   align-content: space-around;
@@ -538,9 +552,10 @@ body {
 button {
   display: flex;
   background-color: rgb(252, 245, 235);
-  min-width: 150px;
-  min-height: 45px;
-  border: 0.5px solid rgb(81, 49, 39);
+  color: rgb(11, 38, 58);
+  min-width: 100px;
+  min-height: 50px;
+  border: 0.5px solid rgb(81, 39, 39);
   border-radius: 25px;
   justify-content: center;
   text-align: center;
@@ -558,7 +573,7 @@ button:active {
 
 a {
   text-decoration: none;
-  color: rgb(11, 38, 58);
+  color: rgb(252, 245, 235);
   font-size: 12pt;
   padding: 12px 20px;
 }
@@ -662,5 +677,79 @@ nav {
   color: rgb(252, 245, 235);
   filter: drop-shadow(7px 7px 2px rgb(60, 36, 28));
 }
+
+/*header 1*/
+/* Desktop styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+.header-logo {
+  width: 20%;
+  height: 80%;
+  border: 1px solid black;
+  font-size: 2rem;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 1rem;
+}
+
+.header-nav li:last-child {
+  margin-right: 0;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .header-nav ul {
+    flex-direction: column;
+  }
+  .header-nav li {
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .hamburger-menu {
+    display: block;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+/* Mobile styles */
+@media (max-width: 480px) {
+  .header-logo {
+    font-size: 1.5rem;
+  }
+}
+/*header 2*/
 
 /*# sourceMappingURL=style.css.map */

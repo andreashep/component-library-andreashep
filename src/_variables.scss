@@ -1,7 +1,35 @@
+// color
 $blue-main: rgb(40, 99, 143);
 $blue-dark: rgb(11, 38, 58);
 $cream: rgb(252, 245, 235);
 $cream-dark: rgb(242, 235, 225);
 $brown-accent: rgb(124, 77, 58);
 $brown-text: rgb(81, 49, 39);
+$brown-dark: rgb(40, 24, 19);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
 
+// font
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif&family=Source+Sans+Pro:wght@300&display=swap');
+
+$font-family-header: 'Source Sans Pro', sans-serif;
+h1 {
+    font-family: $font-family-header;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: $font-family-header;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: $font-family-header;
+    font-size: 2rem;
+}
+$font-family-body: 'Noto Serif', serif;
+$font-family-accent: 'EB Garamond', serif;
+
+$font-size-header: 2rem;
+$font-size-body: 1rem;
+$font-size-accent: 1.5rem;
