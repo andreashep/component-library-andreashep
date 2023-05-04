@@ -1,8 +1,4 @@
-$color_1: rgb(40, 99, 143);
-$color_2: rgb(252, 245, 235);
-$background-color_1: rgb(252, 245, 235);
-$background-color_2: rgb(11, 38, 58);
-$background-color_3: rgb(40, 99, 143);
+
 
 /*change buttons 2&3 to have different stuff
 like background-image=linear-gradient, effects, etc...
@@ -19,8 +15,8 @@ header {
 	justify-content: space-between;
 	margin-bottom: 5px;
 	height: 200px;
-	background-color: $background-color_1;
-	border: 3px double rgb(81, 49, 39);
+	background-color: $white;
+	border: 3px double $brown-text;
 }
 nav {
 	display: flex;
@@ -29,7 +25,7 @@ nav {
 .nav-links {
 	ul {
 		li {
-			color: $color_1;
+			color: $blue-dark;
 			display: inline-flex;
 			list-style: none;
 			justify-content: space-between;
@@ -37,7 +33,8 @@ nav {
 	}
 	button {
 		display: block;
-		background-color: $background-color_1;
+		background-color: $cream;
+		color: $blue-dark;
 		min-width: 150px;
 		min-height: 50px;
 		border: .5px solid rgb(81, 49, 39);
@@ -47,34 +44,33 @@ nav {
 		text-align: center;
 		margin: 10px 25px;
 		&:hover {
-			background-color: $background-color_2;
-			color: $color_2;
+			background-color: $blue-main;
+			color: $cream;
 			filter: drop-shadow(7px 7px 2px rgb(60, 36, 28));
 		}
 		&:active {
-			background-color: $background-color_3;
+			background-color: $blue-dark;
 		}
 	}
 	a {
 		text-decoration: none;
-		color: $color_1;
+		color: $cream;
 		font-size: 12pt;
 		padding: 12px 20px;
 		&:hover {
-			background-color: $background-color_2;
-			color: $color_2;
+			background-color: $blue-main;
+			color: $cream;
 			border-radius: 25px;
 		}
 		&:active {
-			color: $color_2;
-			background-color: $background-color_3;
-			color: $color_2;
+			color: $cream;
+			background-color: $blue-dark;
 		}
 	}
 }
 .logo {
 	display: flex;
-	background-color: $background-color_3;
+	background-color: $cream;
 	margin: 0 100px;
 	border: 1px solid rgb(81, 49, 39);
 	justify-content: center;
@@ -83,13 +79,13 @@ nav {
 		min-height: 75px;
 		min-width: 75px;
 		margin: 15px;
-		color: $color_1;
+		color: $blue-main;
 	}
 	a {
 		&:hover {
-			background-color: $background-color_3;
-			color: $color_2;
-			filter: drop-shadow(7px 7px 2px rgb(60, 36, 28));
+			background-color: $blue-dark;
+			color: $cream;
+			filter: drop-shadow(7px 7px 2px $brown-text);
 		}
 	}
 }

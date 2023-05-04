@@ -38,17 +38,19 @@ ul {
 	&:hover {
 		color: $cream;
 		background-color: $blue-main;
-		filter: drop-shadow(0 0 0.5rem black);
+		filter: drop-shadow(3px 3px 3px black);
 	}
 	&:active {
 		background-color: $blue-dark;
 		color: $cream;
+		filter: drop-shadow(3px 3px 3px black);
 	}
 }
 
 .btn-small {
 	display: flex;
 	background-color: $cream;
+	color: $blue-dark;
 	margin: 50px;
 	width: 100px;
 	height: 35px;
@@ -67,18 +69,21 @@ ul {
 		}
 	}
 	&:hover {
-		color: $color_2;
+		color: $cream;
 		background-color: $blue-main;
+		filter: drop-shadow(3px 3px 3px black);
 	}
 	&:active {
 		background-color: $blue-dark;
 		color: $cream;
+		filter: drop-shadow(3px 3px 3px black);
 	}
 }
 
 .btn-large {
 	display: flex;
 	background-color: $cream;
+	color: $blue-dark;
 	margin: 100px;
 	width: 200px;
 	height: 50px;
@@ -94,16 +99,18 @@ ul {
 	&:hover {
 		color: $cream;
 		background-color: $blue-main;
-		filter: drop-shadow(0 0 0.5rem black);
+		filter: drop-shadow(3px 3px 3px black);
 	}
 	&:active {
 		background-color: $blue-dark;
 		color: $cream;
+		filter: drop-shadow(3px 3px 3px black);
 	}
 }
 .btn-icon {
 	display: flex;
 	background-color: $blue-main;
+	color: $cream;
 	margin: 100px;
 	width: 75px;
 	height: 75px;
@@ -119,17 +126,19 @@ ul {
 	&:hover {
 		color: $cream;
 		background-color: $blue-main;
-		filter: drop-shadow(0 0 0.5rem black);
+		filter: drop-shadow(3px 3px 3px black);
 	}
 	&:active {
 		background-color: $blue-dark;
 		color: $cream;
+		filter: drop-shadow(3px 3px 3px black);
 	}
 }
 
 .btn-gradient {
 	display: flex;
 	background-color: $cream;
+	color: $blue-dark;
 	margin: 100px;
 	width: 150px;
 	height: 35px;
@@ -145,11 +154,12 @@ ul {
 	&:hover {
 		color: $cream;
 		background-color: $blue-main;
-		filter: drop-shadow(0 0 0.5rem black);
+		filter: drop-shadow(3px 3px 3px black);
 	}
 	&:active {
 		background-color: $blue-dark;
 		color: $cream;
+		filter: drop-shadow(3px 3px 3px black);
 	}
 }
 .btn-square {
@@ -158,6 +168,7 @@ ul {
 		border: .5px solid $brown-text;
 		border-radius: 4px;
 		background-color: $cream;
+		color: $blue-main;
 		margin: 100px;
 		color: #333;
 		font-size: 16px;
@@ -170,5 +181,12 @@ ul {
 		
 		&:hover {
 		  background-color: $blue-main;
+		  color: $cream;
+		  filter: drop-shadow(3px 3px 3px black);
+		}
+		&:active {
+			background-color: $blue-dark;
+			color: $cream;
+			filter: drop-shadow(3px 3px 3px black);
 		}
 	  }

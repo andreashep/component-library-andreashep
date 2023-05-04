@@ -209,16 +209,18 @@ ul {
 .btn:hover {
   color: rgb(252, 245, 235);
   background-color: rgb(40, 99, 143);
-  filter: drop-shadow(0 0 0.5rem black);
+  filter: drop-shadow(3px 3px 3px black);
 }
 .btn:active {
   background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
+  filter: drop-shadow(3px 3px 3px black);
 }
 
 .btn-small {
   display: flex;
   background-color: rgb(252, 245, 235);
+  color: rgb(11, 38, 58);
   margin: 50px;
   width: 100px;
   height: 35px;
@@ -238,17 +240,20 @@ ul {
   border-radius: 25px;
 }
 .btn-small:hover {
-  color: black;
+  color: rgb(252, 245, 235);
   background-color: rgb(40, 99, 143);
+  filter: drop-shadow(3px 3px 3px black);
 }
 .btn-small:active {
   background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
+  filter: drop-shadow(3px 3px 3px black);
 }
 
 .btn-large {
   display: flex;
   background-color: rgb(252, 245, 235);
+  color: rgb(11, 38, 58);
   margin: 100px;
   width: 200px;
   height: 50px;
@@ -265,16 +270,18 @@ ul {
 .btn-large:hover {
   color: rgb(252, 245, 235);
   background-color: rgb(40, 99, 143);
-  filter: drop-shadow(0 0 0.5rem black);
+  filter: drop-shadow(3px 3px 3px black);
 }
 .btn-large:active {
   background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
+  filter: drop-shadow(3px 3px 3px black);
 }
 
 .btn-icon {
   display: flex;
   background-color: rgb(40, 99, 143);
+  color: rgb(252, 245, 235);
   margin: 100px;
   width: 75px;
   height: 75px;
@@ -291,16 +298,18 @@ ul {
 .btn-icon:hover {
   color: rgb(252, 245, 235);
   background-color: rgb(40, 99, 143);
-  filter: drop-shadow(0 0 0.5rem black);
+  filter: drop-shadow(3px 3px 3px black);
 }
 .btn-icon:active {
   background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
+  filter: drop-shadow(3px 3px 3px black);
 }
 
 .btn-gradient {
   display: flex;
   background-color: rgb(252, 245, 235);
+  color: rgb(11, 38, 58);
   margin: 100px;
   width: 150px;
   height: 35px;
@@ -317,11 +326,12 @@ ul {
 .btn-gradient:hover {
   color: rgb(252, 245, 235);
   background-color: rgb(40, 99, 143);
-  filter: drop-shadow(0 0 0.5rem black);
+  filter: drop-shadow(3px 3px 3px black);
 }
 .btn-gradient:active {
   background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
+  filter: drop-shadow(3px 3px 3px black);
 }
 
 .btn-square {
@@ -330,6 +340,7 @@ ul {
   border: 0.5px solid rgb(81, 49, 39);
   border-radius: 4px;
   background-color: rgb(252, 245, 235);
+  color: rgb(40, 99, 143);
   margin: 100px;
   color: #333;
   font-size: 16px;
@@ -342,6 +353,13 @@ ul {
 }
 .btn-square:hover {
   background-color: rgb(40, 99, 143);
+  color: rgb(252, 245, 235);
+  filter: drop-shadow(3px 3px 3px black);
+}
+.btn-square:active {
+  background-color: rgb(11, 38, 58);
+  color: rgb(252, 245, 235);
+  filter: drop-shadow(3px 3px 3px black);
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -606,7 +624,7 @@ header {
   justify-content: space-between;
   margin-bottom: 5px;
   height: 200px;
-  background-color: rgb(252, 245, 235);
+  background-color: rgb(255, 255, 255);
   border: 3px double rgb(81, 49, 39);
 }
 
@@ -616,7 +634,7 @@ nav {
 }
 
 .nav-links ul li {
-  color: rgb(40, 99, 143);
+  color: rgb(11, 38, 58);
   display: inline-flex;
   list-style: none;
   justify-content: space-between;
@@ -624,6 +642,7 @@ nav {
 .nav-links button {
   display: block;
   background-color: rgb(252, 245, 235);
+  color: rgb(11, 38, 58);
   min-width: 150px;
   min-height: 50px;
   border: 0.5px solid rgb(81, 49, 39);
@@ -634,33 +653,32 @@ nav {
   margin: 10px 25px;
 }
 .nav-links button:hover {
-  background-color: rgb(11, 38, 58);
+  background-color: rgb(40, 99, 143);
   color: rgb(252, 245, 235);
   filter: drop-shadow(7px 7px 2px rgb(60, 36, 28));
 }
 .nav-links button:active {
-  background-color: rgb(40, 99, 143);
+  background-color: rgb(11, 38, 58);
 }
 .nav-links a {
   text-decoration: none;
-  color: rgb(40, 99, 143);
+  color: rgb(252, 245, 235);
   font-size: 12pt;
   padding: 12px 20px;
 }
 .nav-links a:hover {
-  background-color: rgb(11, 38, 58);
+  background-color: rgb(40, 99, 143);
   color: rgb(252, 245, 235);
   border-radius: 25px;
 }
 .nav-links a:active {
   color: rgb(252, 245, 235);
-  background-color: rgb(40, 99, 143);
-  color: rgb(252, 245, 235);
+  background-color: rgb(11, 38, 58);
 }
 
 .logo {
   display: flex;
-  background-color: rgb(40, 99, 143);
+  background-color: rgb(252, 245, 235);
   margin: 0 100px;
   border: 1px solid rgb(81, 49, 39);
   justify-content: center;
@@ -673,9 +691,9 @@ nav {
   color: rgb(40, 99, 143);
 }
 .logo a:hover {
-  background-color: rgb(40, 99, 143);
+  background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
-  filter: drop-shadow(7px 7px 2px rgb(60, 36, 28));
+  filter: drop-shadow(7px 7px 2px rgb(81, 49, 39));
 }
 
 /*header 1*/
@@ -690,7 +708,7 @@ header {
 .header-logo {
   width: 20%;
   height: 80%;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   font-size: 2rem;
   margin: 20px;
   justify-content: center;
