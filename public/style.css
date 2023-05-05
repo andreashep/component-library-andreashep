@@ -49,6 +49,13 @@ table {
   border-spacing: 0;
 }
 
+/* Define font families */
+/* Apply font families to typography */
+h1, h2, h3 {
+  font-weight: bold;
+  /* additional styling */
+}
+
 h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 3rem;
@@ -65,10 +72,26 @@ h3 {
 }
 
 p {
-  font-family: "EB Garamond", serif;
+  font-family: "Noto Serif", serif;
   font-size: 1.5rem;
+  font-weight: normal;
 }
 
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+blockquote {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  /* additional styling */
+}
+
+/*font sizes*/
+/*$font-size-header: 2rem;*/
 body {
   display: flex;
   height: 100vw;
@@ -264,13 +287,14 @@ ul {
   height: 35px;
   border: 0.5px solid rgb(81, 49, 39);
   border-radius: 25px;
-  font-size: 16px;
   justify-content: center;
   align-content: center;
+  padding: 5px;
 }
 .btn a {
   text-decoration: none;
   align-self: center;
+  color: rgb(11, 38, 58);
 }
 .btn:hover {
   color: rgb(252, 245, 235);
@@ -278,8 +302,8 @@ ul {
   filter: drop-shadow(3px 3px 3px black);
 }
 .btn:active {
-  background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
+  background-color: rgb(11, 38, 58);
   filter: drop-shadow(3px 3px 3px black);
 }
 
@@ -453,8 +477,8 @@ ul {
   align-items: center;
   padding: 3px;
   border: 1px solid black;
-  width: 200px;
-  height: 250px;
+  width: 250px;
+  height: 300px;
   padding: 7px;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -473,7 +497,7 @@ ul {
 }
 .card1 p {
   margin: 7px;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /*text container*/
@@ -509,7 +533,7 @@ ul {
   margin: 7px;
 }
 .card2 p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 7px;
 }
 
@@ -534,12 +558,11 @@ ul {
   height: 100%;
 }
 .card h2 {
-  font-size: 2rem;
   margin: 7px;
   padding: 0.5rem;
 }
 .card p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 7px;
   padding: 0.5rem;
 }
@@ -547,7 +570,7 @@ ul {
   padding: 0.5rem;
 }
 .card footer {
-  background-color: rgb(252, 245, 235);
+  background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
   padding: 0.5rem;
 }
@@ -574,11 +597,33 @@ ul {
   color: rgb(252, 245, 235);
 }
 
+/*hd cards div*/
+.hd_cards_div {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 525px;
+  min-width: 100vw;
+  background-color: rgb(255, 255, 255);
+  border: 3px double rgb(81, 39, 39);
+  justify-content: space-around;
+  align-content: space-between;
+  column-gap: 30px;
+  padding: 0px 30px 30px 30px;
+}
+.hd_cards_div h1 {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  justify-content: center;
+  align-content: space-around;
+  color: rgb(11, 38, 58);
+}
+
 /*card.1*/
 .one {
   display: flex;
   flex-basis: 20%;
-  height: 325px;
+  height: 80%;
   flex-flow: row wrap;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(81, 39, 39);
@@ -587,18 +632,24 @@ ul {
   align-content: space-around;
   padding: 15px;
 }
+.one a:hover {
+  filter: drop-shadow(3px 3px 3px black);
+}
 .one img {
   height: 150px;
-  margin: 10px;
+  margin: 15px;
   align-content: center;
   filter: drop-shadow(3px 3px 3px black);
+}
+.one h3 {
+  margin: 15px;
 }
 
 /*card.2*/
 .two {
   display: flex;
   flex-basis: 25%;
-  height: 325px;
+  height: 80%;
   flex-flow: row wrap;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(81, 39, 39);
@@ -607,10 +658,19 @@ ul {
   align-content: space-around;
   padding: 15px;
 }
+.two a:hover {
+  filter: drop-shadow(3px 3px 3px black);
+}
+.two h3 {
+  margin: 15px;
+}
 .two img {
   height: 150px;
-  margin: 10px;
+  margin: 15px;
   align-content: center;
+  filter: drop-shadow(3px 3px 3px black);
+}
+.two img:hover {
   filter: drop-shadow(3px 3px 3px black);
 }
 
@@ -618,7 +678,7 @@ ul {
 .three {
   display: flex;
   flex-basis: 20%;
-  height: 325px;
+  height: 80%;
   flex-flow: row wrap;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(81, 39, 39);
@@ -627,49 +687,20 @@ ul {
   align-content: space-around;
   padding: 15px;
 }
+.three a:hover {
+  filter: drop-shadow(3px 3px 3px black);
+}
+.three h3 {
+  margin: 15px;
+}
 .three img {
   height: 150px;
-  margin: 10px;
+  margin: 15px;
   align-content: center;
   filter: drop-shadow(3px 3px 3px black);
 }
-
-button {
-  display: flex;
-  background-color: rgb(252, 245, 235);
-  color: rgb(11, 38, 58);
-  min-width: 100px;
-  min-height: 50px;
-  border: 0.5px solid rgb(81, 39, 39);
-  border-radius: 25px;
-  justify-content: center;
-  text-align: center;
-  margin: 30px;
-}
-button:hover {
-  background-color: rgb(40, 99, 143);
-  color: rgb(252, 245, 235);
+.three img:hover {
   filter: drop-shadow(3px 3px 3px black);
-}
-button:active {
-  background-color: rgb(11, 38, 58);
-  color: rgb(252, 245, 235);
-}
-
-a {
-  text-decoration: none;
-  color: rgb(252, 245, 235);
-  font-size: 12pt;
-  padding: 12px 20px;
-}
-a:hover {
-  background-color: rgb(40, 99, 143);
-  color: rgb(252, 245, 235);
-  border-radius: 25px;
-}
-a:active {
-  color: rgb(252, 245, 235);
-  background-color: rgb(11, 38, 58);
 }
 
 img:hover {
@@ -836,5 +867,470 @@ header {
   }
 }
 /*header 2*/
+.container-main {
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container1 {
+  display: flex;
+  width: 90vw;
+  height: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 20px;
+  padding: 20px;
+}
+
+.flex-item1 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box1 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item2 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box2 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item3 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box3 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item4 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box4 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #e5e5e5;
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item5 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box5 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #cccccc;
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+/*container 1 end*/
+.flex-container2 {
+  display: flex;
+  width: 90vw;
+  height: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 20px;
+  padding: 20px;
+}
+
+.flex-item6 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box6 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(40, 99, 143);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item7 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box7 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(11, 38, 58);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item8 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box8 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(252, 245, 235);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item9 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box9 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(242, 235, 225);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item10 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box10 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(124, 77, 58);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+/*container 2 end*/
+.flex-container3 {
+  display: flex;
+  width: 90vw;
+  height: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 20px;
+  padding: 20px;
+}
+
+.flex-item11 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box11 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(81, 49, 39);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item12 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box12 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(40, 24, 19);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item13 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box13 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item14 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box14 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.flex-item15 {
+  width: calc(5% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box15 {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+/*container 3 end*/
+.title {
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Typography*/
+.typography1 {
+  display: flex;
+  width: 90vw;
+  height: 800px;
+  flex-direction: column;
+  font-family: "EB Garamond", serif;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 20px;
+  padding: 20px 20px 20px 60px;
+}
+.typography1 h1, .typography1 .h11-bold {
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #333333;
+}
+.typography1 p, .typography1 .p1-regular {
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #666666;
+}
+.typography1 h2, .typography1 .h21-medium {
+  font-family: "EB Garamond", serif;
+  font-weight: medium;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.25px;
+  color: #333333;
+}
+.typography1 p, .typography1 .p1-accent {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #666666;
+}
+.typography1 h3, .typography1 .h3-regular {
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #333333;
+}
+
+/*end of font-family-header*/
+/*font-family-body*/
+.typography2 {
+  display: flex;
+  width: 90vw;
+  height: 800px;
+  flex-direction: column;
+  font-family: "EB Garamond", serif;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 20px;
+  padding: 20px 20px 20px 60px;
+}
+.typography2 h1, .typography2 .h12-bold {
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #333333;
+}
+.typography2 p, .typography2 .p2-regular {
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #666666;
+}
+.typography2 h2, .typography2 .h22-medium {
+  font-family: "EB Garamond", serif;
+  font-weight: medium;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.25px;
+  color: #333333;
+}
+.typography2 p, .typography2 .p2-accent {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #666666;
+}
+.typography2 h3, .typography2 .h32-regular {
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #333333;
+}
+
+/*end of font-family-body*/
+/*font-family-accent*/
+.typography3 {
+  display: flex;
+  width: 90vw;
+  height: 800px;
+  flex-direction: column;
+  font-family: "EB Garamond", serif;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 20px;
+  padding: 20px 20px 20px 60px;
+}
+.typography3 h1, .typography3 .h13-bold {
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #333333;
+}
+.typography3 p, .typography3 .p3-regular {
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #666666;
+}
+.typography3 h2, .typography3 .h23-medium {
+  font-family: "EB Garamond", serif;
+  font-weight: medium;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.25px;
+  color: #333333;
+}
+.typography3 p, .typography3 .p3-accent {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #666666;
+}
+.typography3 h3, .typography3 .h33-regular {
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #333333;
+}
+
+/*Media Queries*/
+@media (max-width: 768px) {
+  .flex-container1 {
+    flex-direction: row wrap;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .flex-container1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

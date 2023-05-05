@@ -1,0 +1,494 @@
+.container-main {
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex-container1 {
+    display: flex;
+    width: 90vw;
+    height: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid $black;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .flex-item1 {
+    width: calc(5% - 20px);
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .box1 {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $black;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+
+  .flex-item2 {
+    width: calc(5% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .box2 {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $white;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+
+  .flex-item3 {
+    width: calc(5% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .box3 {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $grey-light;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+
+  .flex-item4 {
+    width: calc(5% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .box4 {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $grey;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+
+  .flex-item5 {
+    width: calc(5% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .box5 {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $silver;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+
+  /*container 1 end*/
+
+  .flex-container2 {
+    display: flex;
+    width: 90vw;
+    height: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid $black;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .flex-item6 {
+    width: calc(5% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .box6 {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $blue-main;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+
+  .flex-item7 {
+    width: calc(5% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .box7 {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $blue-dark;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+
+  .flex-item8 {
+    width: calc(5% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .box8 {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $cream;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+
+  .flex-item9 {
+    width: calc(5% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .box9 {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $cream-dark;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+
+  .flex-item10 {
+    width: calc(5% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .box10 {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $brown-accent;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+
+    /*container 2 end*/
+  
+    .flex-container3 {
+        display: flex;
+        width: 90vw;
+        height: 1fr;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 1px solid $black;
+        margin: 20px;
+        padding: 20px;
+      }
+      
+      .flex-item11 {
+        width: calc(5% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      
+      .box11 {
+        width: 100%;
+        padding-bottom: 100%;
+        background-color: $brown-text;
+        border: 1px solid $black;
+        margin-bottom: 10px;
+      }
+    
+      .flex-item12 {
+        width: calc(5% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      
+      .box12 {
+        width: 100%;
+        padding-bottom: 100%;
+        background-color: $brown-dark;
+        border: 1px solid $black;
+        margin-bottom: 10px;
+      }
+    
+      .flex-item13 {
+        width: calc(5% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      
+      .box13 {
+        width: 100%;
+        padding-bottom: 100%;
+        background-color: $white;
+        border: 1px solid $black;
+        margin-bottom: 10px;
+      }
+    
+      .flex-item14 {
+        width: calc(5% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      
+      .box14 {
+        width: 100%;
+        padding-bottom: 100%;
+        background-color: $white;
+        border: 1px solid $black;
+        margin-bottom: 10px;
+      }
+    
+      .flex-item15 {
+        width: calc(5% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      
+      .box15 {
+        width: 100%;
+        padding-bottom: 100%;
+        background-color: $white;
+        border: 1px solid $black;
+        margin-bottom: 10px;
+      }
+    
+        /*container 3 end*/
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /*Typography*/
+
+  .typography1 {
+    display: flex;
+    width: 90vw;
+    height: 800px;
+    flex-direction: column;
+    font-family: 'EB Garamond', serif;
+    border: 1px solid $black;
+    margin: 20px;
+    padding: 20px 20px 20px 60px;
+  
+    h1, .h11-bold {
+      font-family: 'EB Garamond', serif;
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      color: #333333;
+    }
+  
+    p, .p1-regular {
+      font-family: 'EB Garamond', serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      letter-spacing: 0;
+      color: #666666;
+    }
+  
+    h2, .h21-medium {
+      font-family: 'EB Garamond', serif;
+      font-weight: medium;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      letter-spacing: -0.25px;
+      color: #333333;
+    }
+  
+    p, .p1-accent {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      letter-spacing: 0;
+      color: #666666;
+    }
+  
+    h3, .h3-regular {
+      font-family: 'EB Garamond', serif;
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+      color: #333333;
+    }
+}
+/*end of font-family-header*/
+
+
+/*font-family-body*/
+
+.typography2 {
+    display: flex;
+    width: 90vw;
+    height: 800px;
+    flex-direction: column;
+    font-family: 'EB Garamond', serif;
+    border: 1px solid $black;
+    margin: 20px;
+    padding: 20px 20px 20px 60px;
+  
+    h1, .h12-bold {
+      font-family: 'EB Garamond', serif;
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      color: #333333;
+    }
+  
+    p, .p2-regular {
+      font-family: 'EB Garamond', serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      letter-spacing: 0;
+      color: #666666;
+    }
+  
+    h2, .h22-medium {
+      font-family: 'EB Garamond', serif;
+      font-weight: medium;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      letter-spacing: -0.25px;
+      color: #333333;
+    }
+  
+    p, .p2-accent {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      letter-spacing: 0;
+      color: #666666;
+    }
+  
+    h3, .h32-regular {
+      font-family: 'EB Garamond', serif;
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+      color: #333333;
+    }
+}
+
+/*end of font-family-body*/
+
+/*font-family-accent*/
+
+.typography3 {
+    display: flex;
+    width: 90vw;
+    height: 800px;
+    flex-direction: column;
+    font-family: 'EB Garamond', serif;
+    border: 1px solid $black;
+    margin: 20px;
+    padding: 20px 20px 20px 60px;
+  
+    h1, .h13-bold {
+      font-family: 'EB Garamond', serif;
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      color: #333333;
+    }
+  
+    p, .p3-regular {
+      font-family: 'EB Garamond', serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      letter-spacing: 0;
+      color: #666666;
+    }
+  
+    h2, .h23-medium {
+      font-family: 'EB Garamond', serif;
+      font-weight: medium;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      letter-spacing: -0.25px;
+      color: #333333;
+    }
+  
+    p, .p3-accent {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      letter-spacing: 0;
+      color: #666666;
+    }
+  
+    h3, .h33-regular {
+      font-family: 'EB Garamond', serif;
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+      color: #333333;
+    }
+}
+
+
+
+/*Media Queries*/
+@media (max-width: 768px) {
+    .flex-container1 {
+      flex-direction: row wrap;
+      align-items: center;
+    }
+       
+  }
+  @media (max-width: 480px) {
+    .flex-container1 {
+      flex-direction: column;
+      align-items: center;
+    }
+       
+  }
