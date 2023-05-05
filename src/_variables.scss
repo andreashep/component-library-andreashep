@@ -14,6 +14,8 @@ $grey: #2F3035;
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif&family=Source+Sans+Pro:wght@300&display=swap');
 
 $font-family-header: 'Source Sans Pro', sans-serif;
+$font-family-body: 'Noto Serif', serif;
+$font-family-accent: 'EB Garamond', serif;
 h1 {
     font-family: $font-family-header;
     font-size: 3rem;
@@ -28,8 +30,11 @@ h3 {
     font-family: $font-family-header;
     font-size: 2rem;
 }
-$font-family-body: 'Noto Serif', serif;
-$font-family-accent: 'EB Garamond', serif;
+p {
+    font-family: $font-family-accent;
+    font-size: 1.5rem;
+}
+
 
 $font-size-header: 2rem;
 $font-size-body: 1rem;

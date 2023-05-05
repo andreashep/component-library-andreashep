@@ -64,62 +64,48 @@ h3 {
   font-size: 2rem;
 }
 
-/* The hero image */
-/* Place text in the middle of the image */
+p {
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+}
+
 body {
   display: flex;
   height: 100vw;
   flex-direction: column;
 }
 
-.hero1 {
+/*background-image hero*/
+.hero_1 {
   display: flex;
-  background-image: url("../../public/components/images/great-lakes.jpeg");
+  background-image: url("../public/components/images/great-lakes.jpeg");
   background-size: cover;
-  height: 500px;
+  height: 600px;
   width: 100vw;
-  background-color: #2F3035;
   background-repeat: no-repeat;
   justify-content: center;
+  align-items: center;
   border: 3px solid rgb(0, 0, 0);
+  padding: 100px auto;
+  position: relative;
 }
-.hero1 img {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  padding: auto;
-}
-
-.hero-text {
+.hero_1 .hero-text {
   display: flex;
   border: 3px solid rgb(255, 255, 255);
   flex-direction: column;
-  height: 30%;
-  width: 30%;
-  justify-content: space-around;
-  /*position: absolute;*/
-  margin: 0 auto;
-  /*top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: $black;*/
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 7% auto;
+  color: rgb(252, 245, 235);
+}
+.hero_1 .hero-text h3 {
+  margin-bottom: 10px;
 }
 
-button {
-  margin: 10px;
-  width: 100px;
-  height: 35px;
-  border-radius: 25px;
-  text-align: center;
-}
-button:hover {
-  background-color: aqua;
-  color: black;
-  filter: drop-shadow(2px 2px 2px black);
-}
-
-.hero2 {
+/*desktop  fav_font_hero*/
+.hero_2 {
   display: flex;
   flex-direction: row;
   border: 1px solid black;
@@ -129,7 +115,8 @@ button:hover {
   justify-content: space-between;
   align-content: center;
 }
-.hero2 img {
+
+.hero_2 img {
   display: flex;
   margin: 25px;
   width: 20em;
@@ -147,19 +134,23 @@ button:hover {
   margin: auto;
   padding: auto;
 }
+
 .fav_font blockquote {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-content: space-around;
   width: 15em;
-  margin: 50% auto 15px auto;
+  margin: 50% auto 15px 25px;
 }
+
 .fav_font figcaption {
   text-align: center;
-  padding: 15px;
+  padding: 25px;
   width: 20em;
   height: 25em;
 }
+
 .fav_font img {
   display: flex;
   flex-basis: 1;
@@ -168,6 +159,85 @@ button:hover {
   padding: auto;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  .hero_2 {
+    flex-direction: column;
+    flex-basis: auto;
+    height: auto;
+    margin: 25px auto;
+  }
+  .hero_2 img {
+    margin: 25px auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .fav_font {
+    flex-basis: auto;
+    height: auto;
+    margin: auto;
+    padding: auto;
+  }
+  .fav_font blockquote {
+    width: auto;
+    margin: 15px auto;
+  }
+  .fav_font figcaption {
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+  .fav_font img {
+    margin: 25px auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+/*hero_3* desktop*/
+.hero_3 {
+  background-image: url("../public/components/images/bgimage2.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 1fr 20px;
+}
+
+.hero_3_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin: 1fr auto;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 1fr 20px;
+}
+.hero_3_content h3 {
+  margin: 20px auto;
+}
+
+.cta-button {
+  min-height: 50px;
+  width: 100px;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(252, 245, 235);
+  color: rgb(11, 38, 58);
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: rgb(11, 38, 58);
+  color: rgb(252, 245, 235);
+}
+
+/*end of 3rd hero*/
 /*On hover the button colors go into their respective negatives.  Active is a darker color than hover.  These colors can be changes to customize the buttons uses */
 .btn_sizes {
   display: inline-flex;
@@ -217,19 +287,20 @@ ul {
   display: flex;
   background-color: rgb(252, 245, 235);
   color: rgb(11, 38, 58);
-  margin: 50px;
+  margin: 25px;
   width: 100px;
   height: 35px;
   border: 0.5px solid rgb(81, 49, 39);
   border-radius: 25px;
-  font-size: 12px;
+  font-size: 16px;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   text-align: center;
 }
 .btn-small a {
+  display: flex;
   text-decoration: none;
-  align-self: center;
+  align-content: center;
 }
 .btn-small a:hover {
   width: 200px;
