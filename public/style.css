@@ -68,46 +68,42 @@ h3 {
 /* Place text in the middle of the image */
 body {
   display: flex;
-  height: 100%;
+  height: 100vw;
   flex-direction: column;
 }
 
-html {
-  height: 100%;
-}
-
-h1 {
-  font-size: 50px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
 .hero1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Quote.png");
-  height: 65%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  background-image: url("../../public/components/images/great-lakes.jpeg");
   background-size: cover;
-  position: relative;
+  height: 500px;
+  width: 100vw;
+  background-color: #2F3035;
+  background-repeat: no-repeat;
+  justify-content: center;
+  border: 3px solid rgb(0, 0, 0);
 }
 .hero1 img {
   display: flex;
   width: 100%;
-  height: 50%;
+  height: 100%;
   margin: auto;
   padding: auto;
 }
 
 .hero-text {
-  font-size: 20px;
-  text-align: center;
-  position: absolute;
-  top: 75%;
+  display: flex;
+  border: 3px solid rgb(255, 255, 255);
+  flex-direction: column;
+  height: 30%;
+  width: 30%;
+  justify-content: space-around;
+  /*position: absolute;*/
+  margin: 0 auto;
+  /*top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: $black;*/
 }
 
 button {
