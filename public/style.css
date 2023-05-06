@@ -134,6 +134,7 @@ body {
   border: 1px solid black;
   flex-basis: 25%;
   height: 500px;
+  width: 50vw;
   margin: 25px auto;
   justify-content: space-between;
   align-content: center;
@@ -245,6 +246,7 @@ body {
 .cta-button {
   min-height: 50px;
   width: 100px;
+  margin: 50px;
   padding: 10px 20px;
   border: none;
   background-color: rgb(252, 245, 235);
@@ -794,6 +796,260 @@ nav {
   filter: drop-shadow(7px 7px 2px rgb(81, 49, 39));
 }
 
+.ftr-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.footer1 {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  background: rgb(11, 38, 58);
+  color: rgb(255, 255, 255);
+  padding: 2rem 0;
+  text-align: center;
+  margin: 30px 0;
+}
+.footer1 .contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border: 1px solid rgb(255, 255, 255);
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer1 .contact-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.footer1 .contact-info p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+.footer1 .ftr1-center {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  border: 1px solid rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer1 .ftr1-center h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.footer1 .ftr1-center p {
+  width: 300px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+.footer1 .logo-ftr1 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 100px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.footer1 .logo-ftr1 h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.footer1 .logo-ftr1 p {
+  color: rgb(255, 255, 255);
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 0;
+}
+.footer1 .social-icons {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  border: 1px solid rgb(255, 255, 255);
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer1 .social-icons img {
+  height: 40px;
+  width: 40px;
+  margin: 0 0.5rem;
+}
+.footer1 .social-icons a {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+.footer1 .social-icons a:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 480px) {
+  .footer1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer1 .contact-info {
+    margin: 20px;
+  }
+  .footer1 .contact-info h3 {
+    font-size: 2rem;
+  }
+  .footer1 .contact-info p {
+    font-size: 1.25rem;
+  }
+  .footer1 .logo-ftr1 {
+    margin: 20px;
+  }
+  .footer1 .social-icons {
+    margin: 20px;
+  }
+}
+/*end of footer 1*/
+/*footer 2*/
+.footer2 {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  background: rgb(242, 235, 225);
+  color: rgb(0, 0, 0);
+  padding: 2rem 0;
+  text-align: center;
+  margin: 30px 0;
+}
+.footer2 .additional-info {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border: 1px solid rgb(11, 38, 58);
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer2 .additional-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.footer2 .additional-info p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+.footer2 .ftr2-center {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  border: 1px solid rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer2 .ftr2-center h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.footer2 .ftr2-center p {
+  width: 300px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+.footer2 .logo-ftr2 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  padding: 1rem;
+  border-radius: 0;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 100px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.footer2 .logo-ftr2 h3 {
+  color: rgb(242, 235, 225);
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.footer2 .logo-ftr2 p {
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 0;
+}
+.footer2 .social-icons {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  border: 1px solid rgb(0, 0, 0);
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer2 .social-icons img {
+  height: 40px;
+  width: 40px;
+  margin: 0 0.5rem;
+}
+.footer2 .social-icons a {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+.footer2 .social-icons a:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 480px) {
+  .footer2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer2 .contact-info {
+    margin: 20px;
+  }
+  .footer2 .contact-info h3 {
+    font-size: 2rem;
+  }
+  .footer2 .contact-info p {
+    font-size: 1.25rem;
+  }
+  .footer2 .logo-ftr1 {
+    margin: 20px;
+  }
+  .footer2 .social-icons {
+    margin: 20px;
+  }
+}
+/*end of footer 2*/
 /*header 1*/
 /* Desktop styles */
 header {
@@ -1331,6 +1587,59 @@ header {
     flex-direction: column;
     align-items: center;
   }
+}
+.crumb-container {
+  width: 80vw;
+  height: 100vh;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/*breadcrumb1*/
+.breadcrumb1 {
+  margin-bottom: 10px;
+}
+.breadcrumb1 a {
+  text-decoration: none;
+  color: rgb(81, 49, 39);
+}
+.breadcrumb1 a:hover {
+  color: rgb(11, 38, 58);
+}
+
+.breadcrumb1 span {
+  color: #333;
+  margin: 0 5px;
+}
+
+.breadcrumb1 .current-page {
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+}
+
+/*end of breadcrumb1*/
+/*breadcrumb2*/
+.breadcrumb2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.breadcrumb2 ul li {
+  margin-right: 5px;
+}
+.breadcrumb2 ul a {
+  text-decoration: none;
+  color: rgb(81, 49, 39);
+}
+.breadcrumb2 ul a:hover {
+  color: rgb(11, 38, 58);
+}
+
+.breadcrumb2 .current-page {
+  font-weight: bold;
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
