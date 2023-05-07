@@ -1,29 +1,26 @@
-
-
-
 /*On hover the button colors go into their respective negatives.  Active is a darker color than hover.  These colors can be changes to customize the buttons uses */
 .btn_sizes {
 	display: inline-flex;
 	flex-direction: row;
-	
 	align-items: center;
 	border: 1px solid black;
 }
 
 ul {
 	text-decoration: none;
-		list-style: none;
-		display: flex;
-		align-items: center;
-		margin: 0;
-		padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
+/*default btn*/
 .btn {
 	display: flex;
 	background-color: $cream;
 	color: $blue-dark;
-	margin: 100px;
+	margin: 50px;
 	width: 150px;
 	height: 35px;
 	border: .5px solid $brown-text;
@@ -31,16 +28,19 @@ ul {
 	justify-content: center;
 	align-content: center;
 	padding: 5px;
+
 	a {
 		text-decoration: none;
 		align-self: center;
 		color: $blue-dark;
 	}
+
 	&:hover {
 		color: $cream;
 		background-color: $blue-main;
 		filter: drop-shadow(3px 3px 3px black);
 	}
+
 	&:active {
 		color: $cream;
 		background-color: $blue-dark;
@@ -48,6 +48,8 @@ ul {
 	}
 }
 
+
+/*btn-small*/
 .btn-small {
 	display: flex;
 	background-color: $cream;
@@ -61,20 +63,25 @@ ul {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+
 	a {
 		display: flex;
 		text-decoration: none;
 		align-content: center;
+
 		&:hover {
-			width: 200px;
+			width: 150px;
 			border-radius: 25px;
+			align-content: center;
 		}
 	}
+
 	&:hover {
 		color: $cream;
 		background-color: $blue-main;
 		filter: drop-shadow(3px 3px 3px black);
 	}
+
 	&:active {
 		background-color: $blue-dark;
 		color: $cream;
@@ -82,11 +89,12 @@ ul {
 	}
 }
 
+/*btn-large*/
 .btn-large {
 	display: flex;
 	background-color: $cream;
 	color: $blue-dark;
-	margin: 100px;
+	margin: 50px;
 	width: 200px;
 	height: 50px;
 	border: .5px solid $brown-text;
@@ -94,42 +102,18 @@ ul {
 	font-size: 16px;
 	justify-content: center;
 	align-content: center;
+
 	a {
 		text-decoration: none;
 		align-self: center;
 	}
+
 	&:hover {
 		color: $cream;
 		background-color: $blue-main;
 		filter: drop-shadow(3px 3px 3px black);
 	}
-	&:active {
-		background-color: $blue-dark;
-		color: $cream;
-		filter: drop-shadow(3px 3px 3px black);
-	}
-}
-.btn-icon {
-	display: flex;
-	background-color: $blue-main;
-	color: $cream;
-	margin: 100px;
-	width: 75px;
-	height: 75px;
-	border: .5px solid rgb(81, 49, 39);
-	border-radius: 50%;
-	font-size: 16px;
-	justify-content: center;
-	align-content: center;
-	a {
-		text-decoration: none;
-		align-self: center;
-	}
-	&:hover {
-		color: $cream;
-		background-color: $blue-main;
-		filter: drop-shadow(3px 3px 3px black);
-	}
+
 	&:active {
 		background-color: $blue-dark;
 		color: $cream;
@@ -137,11 +121,44 @@ ul {
 	}
 }
 
-.btn-gradient {
+/*btn-icon*/
+.btn-icon {
 	display: flex;
-	background-color: $cream;
+	background-color: $blue-main;
+	color: $cream;
+	margin: 50px;
+	width: 75px;
+	height: 75px;
+	border: .5px solid rgb(81, 49, 39);
+	border-radius: 50%;
+	font-size: 16px;
+	justify-content: center;
+	align-content: center;
+
+	a {
+		text-decoration: none;
+		align-self: center;
+	}
+
+	&:hover {
+		color: $cream;
+		background-color: $blue-main;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+
+	&:active {
+		background-color: $blue-dark;
+		color: $cream;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+
+/*btn-gradient1*/
+.btn-gradient1 {
+	display: flex;
+	background: linear-gradient(to right, $blue-main, $cream, $blue-dark);
 	color: $blue-dark;
-	margin: 100px;
+	margin: 50px;
 	width: 150px;
 	height: 35px;
 	border: .5px solid $brown-text;
@@ -149,46 +166,117 @@ ul {
 	font-size: 16px;
 	justify-content: center;
 	align-content: center;
+
 	a {
 		text-decoration: none;
 		align-self: center;
 	}
+
 	&:hover {
 		color: $cream;
 		background-color: $blue-main;
 		filter: drop-shadow(3px 3px 3px black);
 	}
+
 	&:active {
 		background-color: $blue-dark;
 		color: $cream;
 		filter: drop-shadow(3px 3px 3px black);
 	}
 }
+
+/*btn-gradient2*/
+.btn-gradient2 {
+	display: flex;
+	background: linear-gradient(to right, $blue-main, $cream, $brown-text);
+	color: $blue-dark;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	a {
+		text-decoration: none;
+		align-self: center;
+	}
+
+	&:hover {
+		color: $cream;
+		background-color: $blue-main;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+
+	&:active {
+		background-color: $blue-dark;
+		color: $cream;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+
+
+/*btn-gradient3*/
+.btn-gradient3 {
+	display: flex;
+	background: linear-gradient(to right, $blue-dark, $blue-main, $blue-dark);
+	color: $cream;
+	margin: 50px;
+	width: 150px;
+	height: 35px;
+	border: .5px solid $brown-text;
+	border-radius: 25px;
+	font-size: 16px;
+	justify-content: center;
+	align-content: center;
+
+	a {
+		text-decoration: none;
+		align-self: center;
+	}
+
+	&:hover {
+		color: $cream;
+		background-color: $blue-main;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+
+	&:active {
+		background-color: $blue-dark;
+		color: $cream;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+
+
+
+/*btn-square*/
 .btn-square {
 	display: flex;
-		padding: 10px 20px;
-		border: .5px solid $brown-text;
-		border-radius: 4px;
-		background-color: $cream;
-		color: $blue-main;
-		margin: 100px;
-		color: #333;
-		font-size: 16px;
-		cursor: pointer;
-		a {
-			text-decoration: none;
-			align-self: center;
-			list-style: none;
-		}
-		
-		&:hover {
-		  background-color: $blue-main;
-		  color: $cream;
-		  filter: drop-shadow(3px 3px 3px black);
-		}
-		&:active {
-			background-color: $blue-dark;
-			color: $cream;
-			filter: drop-shadow(3px 3px 3px black);
-		}
-	  }
+	padding: 10px 20px;
+	border: .5px solid $brown-text;
+	border-radius: 4px;
+	background-color: $cream;
+	color: $blue-main;
+	margin: 50px;
+	color: #333;
+	font-size: 16px;
+	cursor: pointer;
+
+	a {
+		text-decoration: none;
+		align-self: center;
+		list-style: none;
+	}
+
+	&:hover {
+		background-color: $blue-main;
+		color: $cream;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+
+	&:active {
+		background-color: $blue-dark;
+		color: $cream;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+
+

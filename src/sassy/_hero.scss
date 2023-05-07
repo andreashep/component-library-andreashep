@@ -139,7 +139,7 @@ body {
 /*hero_3* desktop*/
 
 .hero_3 {
-	background-image: url('../public/components/images/bgimage2.png');
+	background-image: url('../public/components/images/1440_gradient_rectangle.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 80vh;
@@ -182,4 +182,16 @@ body {
 	background-color: $blue-dark;
 	color: $cream;
   }
+
+  @media (max-width: 480px) {
+	.hero_3 {
+	  background-image: url('../public/components/images/400_gradient_rectangle.jpg');
+	  background-size: cover;
+	  background-position: center;
+	  height: 40vh;
+	  display: flex;
+	  align-items: center;
+	  padding: 1fr 20px;							
+  }
+}
   /*end of 3rd hero*/

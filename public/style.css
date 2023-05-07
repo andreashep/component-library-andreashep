@@ -219,7 +219,7 @@ body {
 }
 /*hero_3* desktop*/
 .hero_3 {
-  background-image: url("../public/components/images/bgimage2.png");
+  background-image: url("../public/components/images/1440_gradient_rectangle.jpg");
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -262,6 +262,17 @@ body {
   color: rgb(252, 245, 235);
 }
 
+@media (max-width: 480px) {
+  .hero_3 {
+    background-image: url("../public/components/images/400_gradient_rectangle.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    padding: 1fr 20px;
+  }
+}
 /*end of 3rd hero*/
 /*On hover the button colors go into their respective negatives.  Active is a darker color than hover.  These colors can be changes to customize the buttons uses */
 .btn_sizes {
@@ -280,11 +291,12 @@ ul {
   padding: 0;
 }
 
+/*default btn*/
 .btn {
   display: flex;
   background-color: rgb(252, 245, 235);
   color: rgb(11, 38, 58);
-  margin: 100px;
+  margin: 50px;
   width: 150px;
   height: 35px;
   border: 0.5px solid rgb(81, 49, 39);
@@ -309,6 +321,7 @@ ul {
   filter: drop-shadow(3px 3px 3px black);
 }
 
+/*btn-small*/
 .btn-small {
   display: flex;
   background-color: rgb(252, 245, 235);
@@ -329,8 +342,9 @@ ul {
   align-content: center;
 }
 .btn-small a:hover {
-  width: 200px;
+  width: 150px;
   border-radius: 25px;
+  align-content: center;
 }
 .btn-small:hover {
   color: rgb(252, 245, 235);
@@ -343,11 +357,12 @@ ul {
   filter: drop-shadow(3px 3px 3px black);
 }
 
+/*btn-large*/
 .btn-large {
   display: flex;
   background-color: rgb(252, 245, 235);
   color: rgb(11, 38, 58);
-  margin: 100px;
+  margin: 50px;
   width: 200px;
   height: 50px;
   border: 0.5px solid rgb(81, 49, 39);
@@ -371,11 +386,12 @@ ul {
   filter: drop-shadow(3px 3px 3px black);
 }
 
+/*btn-icon*/
 .btn-icon {
   display: flex;
   background-color: rgb(40, 99, 143);
   color: rgb(252, 245, 235);
-  margin: 100px;
+  margin: 50px;
   width: 75px;
   height: 75px;
   border: 0.5px solid rgb(81, 49, 39);
@@ -399,11 +415,12 @@ ul {
   filter: drop-shadow(3px 3px 3px black);
 }
 
-.btn-gradient {
+/*btn-gradient1*/
+.btn-gradient1 {
   display: flex;
-  background-color: rgb(252, 245, 235);
+  background: linear-gradient(to right, rgb(40, 99, 143), rgb(252, 245, 235), rgb(11, 38, 58));
   color: rgb(11, 38, 58);
-  margin: 100px;
+  margin: 50px;
   width: 150px;
   height: 35px;
   border: 0.5px solid rgb(81, 49, 39);
@@ -412,21 +429,76 @@ ul {
   justify-content: center;
   align-content: center;
 }
-.btn-gradient a {
+.btn-gradient1 a {
   text-decoration: none;
   align-self: center;
 }
-.btn-gradient:hover {
+.btn-gradient1:hover {
   color: rgb(252, 245, 235);
   background-color: rgb(40, 99, 143);
   filter: drop-shadow(3px 3px 3px black);
 }
-.btn-gradient:active {
+.btn-gradient1:active {
   background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
   filter: drop-shadow(3px 3px 3px black);
 }
 
+/*btn-gradient2*/
+.btn-gradient2 {
+  display: flex;
+  background: linear-gradient(to right, rgb(40, 99, 143), rgb(252, 245, 235), rgb(81, 49, 39));
+  color: rgb(11, 38, 58);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-gradient2 a {
+  text-decoration: none;
+  align-self: center;
+}
+.btn-gradient2:hover {
+  color: rgb(252, 245, 235);
+  background-color: rgb(40, 99, 143);
+  filter: drop-shadow(3px 3px 3px black);
+}
+.btn-gradient2:active {
+  background-color: rgb(11, 38, 58);
+  color: rgb(252, 245, 235);
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+/*btn-gradient3*/
+.btn-gradient3 {
+  display: flex;
+  background: linear-gradient(to right, rgb(11, 38, 58), rgb(40, 99, 143), rgb(11, 38, 58));
+  color: rgb(252, 245, 235);
+  margin: 50px;
+  width: 150px;
+  height: 35px;
+  border: 0.5px solid rgb(81, 49, 39);
+  border-radius: 25px;
+  font-size: 16px;
+  justify-content: center;
+  align-content: center;
+}
+.btn-gradient3 a {
+  text-decoration: none;
+  align-self: center;
+}
+.btn-gradient3:hover {
+  color: rgb(252, 245, 235);
+  background-color: rgb(40, 99, 143);
+  filter: drop-shadow(3px 3px 3px black);
+}
+.btn-gradient3:active {
+  background-color: rgb(11, 38, 58);
+  color: rgb(252, 245, 235);
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+/*btn-square*/
 .btn-square {
   display: flex;
   padding: 10px 20px;
@@ -434,7 +506,7 @@ ul {
   border-radius: 4px;
   background-color: rgb(252, 245, 235);
   color: rgb(40, 99, 143);
-  margin: 100px;
+  margin: 50px;
   color: #333;
   font-size: 16px;
   cursor: pointer;
