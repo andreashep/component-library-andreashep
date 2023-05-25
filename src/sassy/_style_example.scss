@@ -18,7 +18,7 @@
     padding: 20px;
   }
   
-  .flex-item1 {
+.flex-item1,  .flex-item2,  .flex-item3, .flex-item4, .flex-item5, .flex-item6{
     width: calc(5% - 20px);
     display: flex;
     
@@ -27,7 +27,7 @@
     margin-bottom: 40px;
   }
   
-  .box1 {
+  .box1, .box2, .box3, .box4, .box5 {
     width: 100%;
     padding-bottom: 100%;
     background-color: $black;
@@ -35,70 +35,13 @@
     margin-bottom: 10px;
   }
 
-  .flex-item2 {
-    width: calc(5% - 20px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
   
-  .box2 {
-    width: 100%;
-    padding-bottom: 100%;
-    background-color: $white;
-    border: 1px solid $black;
-    margin-bottom: 10px;
-  }
-
-  .flex-item3 {
-    width: calc(5% - 20px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
   
-  .box3 {
-    width: 100%;
-    padding-bottom: 100%;
-    background-color: $grey-light;
-    border: 1px solid $black;
-    margin-bottom: 10px;
-  }
-
-  .flex-item4 {
-    width: calc(5% - 20px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
   
-  .box4 {
-    width: 100%;
-    padding-bottom: 100%;
-    background-color: $grey;
-    border: 1px solid $black;
-    margin-bottom: 10px;
-  }
 
-  .flex-item5 {
-    width: calc(5% - 20px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
   
-  .box5 {
-    width: 100%;
-    padding-bottom: 100%;
-    background-color: $silver;
-    border: 1px solid $black;
-    margin-bottom: 10px;
-  }
-
+  
+ 
   /*container 1 end*/
 
   .flex-container2 {
