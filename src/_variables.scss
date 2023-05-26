@@ -1,14 +1,17 @@
 // color
-$blue-main: rgb(40, 99, 143);
+$blue-main: rgb(41, 99, 143);
+$blue-light: rgb(214, 224, 242);
+$blue-mid: rgb(170, 193, 221);
+$blue-mid-dark: rgb(94, 145, 204);
 $blue-dark: rgb(11, 38, 58);
 $cream: rgb(252, 245, 235);
 $cream-dark: rgb(242, 235, 225);
 $brown-accent: rgb(124, 77, 58);
 $brown-text: rgb(81, 49, 39);
 $brown-dark: rgb(40, 24, 19);
+
 $black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
-
 
 $grey-light: #f5f5f5;
 $grey: #e5e5e5;
@@ -17,49 +20,169 @@ $grey-dark: #333;
 $grey-darker: #222;
 
 
-// font
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif&family=Source+Sans+Pro:wght@300&display=swap');
+// Quackfest colors
+$yellow-bright: #fff200;
+$yellow: #f7d000;
+$yellow-dark: #f7b000;
+$blue-bright: #00a2ff;
+$blue-bright-dark: #0088ff;
+$teal: #00e6b8;
+$teal-mid: #00b394;
+$teal-dark: #007664;
 
+// font
+@import url("https://use.typekit.net/eim3vkg.css");
+@import url("https://use.typekit.net/qda2xul.css");
 /* Define font families */
-$font-family-header: 'Source Sans Pro', sans-serif;
-$font-family-body: 'Noto Serif', serif;
-$font-family-accent: 'EB Garamond', serif;
+$header: 'Shelby', cursive;
+$body: 'Montserrat', sans-serif;
+$accent: 'Montserrat', sans-serif;
 
 /* Apply font families to typography */
-h1, h2, h3 {
-    font-weight: bold;
-    /* additional styling */
-  }
 
 h1 {
-    font-family: $font-family-header;
-    font-size: 3rem;
+    font-family: $header;
+    font-size: 64px;
+    font-weight: bold;
 }
 
 h2 {
-    font-family: $font-family-header;
-    font-size: 2.5rem;
+    font-family: $body;
+    font-size: 40px;
 }
 
 h3 {
-    font-family: $font-family-header;
-    font-size: 2rem;
+    font-family: $header;
+    font-size: 36px;
+    color: $blue-dark;
+}
+
+h4 {
+    font-family: $header;
+    font-size: 24px;
+}
+
+h5 {
+    font-family: $accent;
+    font-size: 16px;
+    font-style: italic;
 }
 p {
-    font-family: $font-family-body;
-    font-size: 1.5rem;
+    font-family: $body;
+    font-size: 14px;
     font-weight: normal;
 }
 
-a {
-    font-family: $font-family-header;
-    font-size: 1.25rem;
-    font-weight: bold;
-    font-style: italic;
+caption {
+    font-family: $body;
+    font-size: 12px;
+    font-weight: light italic;
 }
 
+a {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: $accent;
+    font-size: 1rem;
+    font-style: italic;
+    text-decoration: none;
+    color: $blue-dark;
+    padding: 16px 24px;
+    &:hover {
+        color: $cream;
+        border-radius: 25px;
+        filter: drop-shadow(3px 3px 3px black);
+      }
+      &:active {
+        color: $cream;
+        filter: drop-shadow(3px 3px 3px black);
+      }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    caption {
+        font-size: 12px;
+    }
+    a {
+        font-size: 16px;
+    }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 12px;
+    }
+    caption {
+        font-size: 10px;
+    }
+    a {
+        font-size: 12px;
+    }
+    li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    h5 {
+        font-size: 10px;
+    }
+    p {
+        font-size: 10px;
+    }
+    caption {
+        font-size: 10px;
+    }
+    a {
+        font-size: 12px;
+    }
+}
 blockquote {
-    font-family: $font-family-accent;
+    font-family: $accent;
     font-style: italic;
     /* additional styling */
   }
@@ -67,9 +190,5 @@ blockquote {
 /*font sizes*/
 /*$font-size-header: 2rem;*/
 
-$font-size-body: 1.5rem;
-$font-size-accent: 1.5rem;
-
-
-
-
+$body: 16px;
+$accent: 16px, italic;

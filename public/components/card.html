@@ -1,134 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
 
-  <link rel="stylesheet" href="../style.css">
-</head>
+  <body>
+    <div id="card_container">
+      <!--div for cards 1&2-->
+      <div class="examples">
+        <!--card 1-->
+        <div class="card1">
+          <img src="../components/images/photo_blur_circle.png" alt="Avatar" />
+          <div class="container1">
+            <h3><b>Jane Doe</b></h3>
+            <p>Graphic Designer</p>
+          </div>
+        </div>
 
-<body>
-  <!--div for cards 1&2-->
-  <div class="examples">
-
-    <!--card 1-->
-    <div class="card1">
-      <img src="../components/images/photo_blur_circle.png" alt="Avatar">
-      <div class="container1">
-        <h3><b>Jane Doe</b></h3>
-        <p>Graphic Designer</p>
+        <!--card 2-->
+        <div class="card2">
+          <img src="../components/images/photo_blur_circle.png" alt="Avatar" />
+          <div class="container2">
+            <h3><b>Jane Doe</b></h3>
+            <p>Web Designer</p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!--card 2-->
-    <div class="card2">
-      <img src="../components/images/photo_blur_circle.png" alt="Avatar">
-      <div class="container2">
-        <h3><b>Jane Doe</b></h3>
-        <p>Web Designer</p>
+      <!--div & detailed cards-->
+      <div class="detailed_cards">
+        <!--card 1-->
+        <div class="card">
+          <header>
+            <h3>A short heading</h3>
+          </header>
+
+          <img
+            src="../components/images/bgimage2.png"
+            alt="alternate explanation"
+          />
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              modi reiciendis ea molestias quas amet. years ago.
+            </p>
+          </div>
+        </div>
+
+        <!--card 2-->
+        <article class="card">
+          <header>
+            <h2>A short heading</h2>
+          </header>
+
+          <img
+            src="../components/images/bgimage2.png"
+            alt="alternate explanation"
+          />
+          <div class="content">
+            <p>Short content.</p>
+          </div>
+          <footer>I have a footer!</footer>
+        </article>
+
+        <!--card 3-->
+        <article class="card">
+          <header>
+            <h2>A longer heading in this card</h2>
+          </header>
+
+          <img
+            src="../components/images/bgimage2.png"
+            alt="alternate explanation"
+          />
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              corporis voluptate aliquid, libero doloremque.
+            </p>
+          </div>
+          <footer>I have a footer!</footer>
+        </article>
+
+        <!--cardh3-->
+        <article class="card">
+          <header>
+            <h2>A short heading</h2>
+          </header>
+
+          <img
+            src="../components/images/bgimage2.png"
+            alt="alternate explanation"
+          />
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              modi reiciendis ea molestias quas amet.
+            </p>
+          </div>
+        </article>
       </div>
-    </div>
-  </div>
 
-<!--div & detailed cards-->
-  <div class="detailed_cards">
+      <!--div for cards HD-->
+      <article class="hd_cards_div">
+        <h1>Title</h1>
 
-    <!--card 1-->
-    <div class="card">
-      <header>
-        <h3>A short heading</h3>
-      </header>
+        <!--card 1-->
+        <div class="one">
+          <a href="#"
+            ><img src="../components/images/image circle.png" alt=""
+          /></a>
+          <div>
+            <h3>One</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <span class="btn"><a href="">Spoonflower</a></span>
+        </div>
 
-      <img src="../components/images/bgimage2.png" alt="alternate explanation">
-      <div class="content">
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime modi reiciendis ea molestias quas amet.
-          years ago. </p>
-      </div>
-    </div>
+        <!--card 2-->
+        <div class="two">
+          <a href="#"
+            ><img src="../components/images/image circle.png" alt=""
+          /></a>
+          <div>
+            <h3>Two</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <span class="btn"><a href="">Redbubble</a></span>
+        </div>
 
-    <!--card 2-->
-    <article class="card">
-      <header>
-        <h2>A short heading</h2>
-      </header>
+        <!--card 3-->
+        <div class="three">
+          <a href="#"
+            ><img src="../components/images/image circle.png" alt=""
+          /></a>
+          <div>
+            <h3>Three</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <span class="btn"><a href="">Society 6</a></span>
+        </div>
+      </article>
+      <!-------------------------------hover_card------------------>
+      <article id="hover_card_div">
+        <figure>
+          <img src="../components/images/Didot-80.jpg" alt="Mountains" />
+          <figcaption>Typography</figcaption>
+        </figure>
+        <figure style="--c: #fff5">
+          <img src="https://picsum.photos/id/475/250/300" alt="Mountains" />
+          <figcaption>The Night</figcaption>
+        </figure>
+      </article>
+      <!---------------------------------------------->
+     <article class="three_d_hover_cards">
+      <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+        <div class="three_d_card">
+          <div class="wrapper">
+            <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" />
+          </div>
+          <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" />
+          <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp" class="character" />
+        </div>
+      </a>
+      
+      <a href="https://www.mythrillfiction.com/force-mage" alt="Mythrill" target="_blank">
+        <div class="three_d_card">
+          <div class="wrapper">
+            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
+          </div>
+          <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
+          <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+        </div>
+      </a>
 
-      <img src="../components/images/bgimage2.png" alt="alternate explanation">
-      <div class="content">
-        <p>Short content.</p>
-      </div>
-      <footer>I have a footer!</footer>
-    </article>
-
-    <!--card 3-->
-    <article class="card">
-      <header>
-        <h2>A longer heading in this card</h2>
-      </header>
-
-      <img src="../components/images/bgimage2.png" alt="alternate explanation">
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia corporis voluptate aliquid, libero
-          doloremque.</p>
-      </div>
-      <footer>I have a footer!</footer>
-    </article>
-
-    <!--cardh3-->
-    <article class="card">
-      <header>
-        <h2>A short heading</h2>
-      </header>
-
-      <img src="../components/images/bgimage2.png" alt="alternate explanation">
-      <div class="content">
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime modi reiciendis ea molestias quas amet.
-        </p>
-      </div>
-    </article>
+     </article>
+<!---------------------------------------------change background grid cards----------->
+     <div class="ag-format-container">
+      <div class="ag-courses_box">
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
     
-  </div>
-
-  <!--div for cards HD-->
-  <article class="hd_cards_div">
-    <h1>Title</h1>
-
-    <!--card 1-->
-      <div class="one">
-        <a href="#"><img src="../components/images/image circle.png" alt=""></a>
-        <div>
-          <h3>One</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+            <div class="ag-courses-item_title">
+              UI/Web&amp;Graph design for teenagers 11-17&#160;years old
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Start:
+              <span class="ag-courses-item_date">
+                04.11.2022
+              </span>
+            </div>
+          </a>
         </div>
-        <span class="btn"><a href="">Spoonflower</a></span>
-      </div>
-
-      <!--card 2-->
-      <div class="two">
-        <a href="#"><img src="../components/images/image circle.png" alt=""></a>
-        <div>
-          <h3>Two</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              UX/UI Web-Design&#160;+ Mobile Design
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Start:
+              <span class="ag-courses-item_date">
+                04.11.2022
+              </span>
+            </div>
+          </a>
         </div>
-        <span class="btn"><a href="">Redbubble</a></span>
-      </div>
-
-      <!--card 3-->
-      <div class="three">
-        <a href="#"><img src="../components/images/image circle.png" alt=""></a>
-        <div>
-          <h3>Three</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Annual package "Product+UX/UI+Graph designer&#160;2022"
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Start:
+              <span class="ag-courses-item_date">
+                04.11.2022
+              </span>
+            </div>
+          </a>
         </div>
-        <span class="btn"><a href="">Society 6</a></span>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Graphic Design
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Start:
+              <span class="ag-courses-item_date">
+                04.11.2022
+              </span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Motion Design
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Start:
+              <span class="ag-courses-item_date">
+                30.11.2022
+              </span>
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Front-end development&#160;+ jQuery&#160;+ CMS
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg">
+            </div>
+            <div class="ag-courses-item_title">
+              Digital Marketing
+            </div>
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Interior Design
+            </div>
+    
+            <div class="ag-courses-item_date-box">
+              Start:
+              <span class="ag-courses-item_date">
+                31.10.2022
+              </span>
+            </div>
+          </a>
+        </div>
+    
       </div>
-   
-  </article>
-
-
-</body>
+    </div>
+      
+      
+    </div>
+  </body>
+</html>
